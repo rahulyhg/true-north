@@ -1,4 +1,4 @@
-<?php /* Template Name: Custom Page Name */ ?>
+<?php /* Template Name: Contact Page */ ?>
 
 <?php the_post() ?>
 <div class="content">

@@ -37,7 +37,7 @@ gulp.task('lint', function() {
 gulp.task('sass', function() {
   return gulp.src('scss/style.scss')
     .pipe(sass({outputStyle: 'expanded'})).on('error', sass.logError)
-    .pipe(rename('style.full.css'))
+    .pipe(rename('style.css'))
     .pipe(gulp.dest('./'))
     .pipe(sass({outputStyle: 'compressed'})).on('error', sass.logError)
     .pipe(gulp.dest('./'))
