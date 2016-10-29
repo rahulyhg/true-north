@@ -5,17 +5,24 @@
 /////////////////////////////////////////////////////////////////////////
 
 // Colors
+$gray: #77787B;
+$gray-light: #9D9FA2;
+$violet: #5600D9;
+$lime: #B3FF00;
+$brown: #C97500;
+$white: #FFFFFF;
 
 // Fonts stacks
+$font-header: "Arial Black", Arial, Helvetica, sans-serif;
+$font-copy: Georgia, serif;
 
-// Font settings
+// Font sizes
+$size-header: 11px;
+$size-copy: 15px;
+$line-height-copy: 18px;
 
-// Sizes
-$space-tiny   : 5px;
-$space-small  : 10px;
-$space-medium : 20px;
-$space-large  : 40px;
-$space-huge   : 80px;
-
-// Transitions
-$tt: 0.2s;
+// Spacing
+$body-margin: 14px;
+$margin-size: 40px;
+$margin-left: 26px;
+$container-width: 515px;

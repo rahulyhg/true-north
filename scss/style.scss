@@ -6,8 +6,6 @@ Description: True North Website Theme.
 Version: 1.0
 */
 
-@import "modules/ascii";
-
 // Modules (these shouldn't output any CSS)
 @import "modules/variables";
 @import "modules/variables_bootstrap";
@@ -24,10 +22,10 @@ Version: 1.0
 @import "base/chromeframe";
 
 // UI
-@import "ui/links";
-@import "ui/buttons";
-@import "ui/lists";
-@import "ui/inputs";
+@import "ui/main";
+@import "ui/nav";
+@import "ui/weather";
+@import "ui/hitcounter";
 
 // Partials
 @import "partials/main";

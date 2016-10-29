@@ -1,0 +1,42 @@
+/* NAVIGATION */
+
+nav {
+  position: fixed;
+  top: 3px + $body-margin;
+  left: $body-margin;
+}
+
+nav ul,
+nav li {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+    list-style-type: none;
+}
+
+nav li.current-menu-item a {
+  border-color: transparent;
+  background: transparent;
+}
+
+nav a {
+  background: $white;
+  color: $gray;
+  border: 1px solid $gray;
+  font-family: $font-header;
+  font-size: 10.5px;
+  padding: 3px 6px;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  letter-spacing: 0.1em;
+}
+
+nav a:active {
+  color: $lime;
+  border: 1px solid $lime;
+}

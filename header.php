@@ -37,9 +37,6 @@
   <?php get_template_part('partials/utilities/ie8_notice'); ?>
   <div class="container">
     <header class="header">
-      <h1 class="site-title">
-        <a href="<?php bloginfo('url'); ?>/" rel="home"><?php bloginfo('name'); ?></a>
-      </h1>
       <nav class="nav">
         <?php wp_nav_menu(); ?>
       </nav>
