@@ -29,5 +29,9 @@
         Visitors
       </div>
     </div>
+
+    <div style="display:none";>
+      <?php echo do_shortcode('[wpc-weather id="56"]'); ?>
+    </div>
   </body>
 </html>

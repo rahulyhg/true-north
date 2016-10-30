@@ -30,12 +30,26 @@
 <div>
 	<?php
 	$sun = trim(strip_tags($wpc_html_today_sun));
-  $sun = trim(substr($sun, strrpos($sun, "-") + 1));
+  $sunset = trim(substr($sun, strrpos($sun, "-") + 1));
   $prefix = "0";
-	if (substr($sun, 0, strlen($prefix)) == $prefix) {
-	    $sun = substr($sun, strlen($prefix));
+	if (substr($sunset, 0, strlen($prefix)) == $prefix) {
+	    $sunset = substr($sunset, strlen($prefix));
 	}
-	$sun = str_replace(" PM", "pm", $sun);
-	echo "Sunset " . $sun;
+	$sunset = str_replace(" PM", "pm", $sunset);
+	echo "Sunset " . $sunset;
 ?>
+</div>
+
+<!-- for grabbing the sunrise/sunset times on every page -->
+<div class="sunrise-sunset" style="display:none;">
+	<?php
+		$sunrise = trim(substr($sun, 0, strrpos($sun, "-")));
+		$prefix = "0";
+		if (substr($sunrise, 0, strlen($prefix)) == $prefix) {
+		    $sunrise = substr($sunrise, strlen($prefix));
+		}
+		$sunrise = str_replace(" AM", "am", $sunrise);
+	?>
+	<div class="sunrise"><?php echo $sunrise; ?></div>
+	<div class="sunset"><?php echo $sunset; ?></div>
 </div>
