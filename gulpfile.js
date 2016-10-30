@@ -47,6 +47,8 @@ gulp.task('sass', function() {
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
   return gulp.src([
+      'js/src/vendor/moment.js',
+      'js/src/vendor/moment-timezone-with-data.js',
       'js/src/vendor/*.js',
       'js/src/vendor/**/*.js',
       'js/src/init.js',

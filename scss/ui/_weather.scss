@@ -1,5 +1,9 @@
-#weather {
+.wpc-weather-id {
   margin-left: $margin-left;
   font-size: $size-copy;
   line-height: $line-height-copy;
+}
+
+.wpc-weather-id .time_temperature, .wpc-weather-id .wind {
+  display: inline;
 }

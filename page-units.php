@@ -1,4 +1,4 @@
-<?php /* Template Name: Units Page ?>
+<?php /* Template Name: Units Page */ ?>
 
 <?php the_post() ?>
 <div class="content">
