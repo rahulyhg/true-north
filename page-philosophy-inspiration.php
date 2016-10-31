@@ -3,8 +3,6 @@
 <div class="content">
   <div id="page-<?php the_ID() ?>" <?php post_class() ?>>
     <!-- <h2 class="entry-title"><?php the_title() ?></h2> -->
-    <div class="entry-content">
-      <?php the_content() ?>
       <?php the_field('philosophy_text') ?>
       <?php 
         $images = get_field('inspiration_gallery');
@@ -20,6 +18,5 @@
             <?php endforeach; ?>
           </div>
         <?php endif; ?>
-    </div>
   </div><!-- .post -->
 </div><!-- .content -->

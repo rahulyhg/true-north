@@ -3,10 +3,20 @@
 <?php the_post() ?>
 <div class="content">
   <div id="page-<?php the_ID() ?>" <?php post_class() ?>>
-    <h2 class="entry-title"><?php the_title() ?></h2>
-    <h4>find me in page-custom.php</h4>
-    <div class="entry-content">
-      <?php the_content() ?>
-    </div>
+    <?php 
+      $images = get_field('project_gallery');
+
+      if( $images ): ?>
+        <div class="project carousel" data-flickity='{"setGallerySize": false, "wrapAround": true, "lazyLoad": true}'>
+          <?php foreach( $images as $image ): ?>
+            <div class="carousel-cell">
+              <a href="<?php echo $image['url']; ?>">
+                <img data-flickity-lazyload="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+              </a>
+            </div>
+          <?php endforeach; ?>
+        </div>
+      <?php endif; ?>
+    <?php the_field('project_text') ?>
   </div><!-- .post -->
 </div><!-- .content -->
