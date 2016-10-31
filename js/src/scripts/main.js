@@ -1,12 +1,16 @@
 $(document).ready(function() {
-  if ($('.timestamp').length > 0) {
+  if ($('.timestamp').length > 1) {
     var updateTime = function() {
       $('.timestamp').text(moment().tz("America/New_York").format('hh:mma'));
     };
     updateTime();
     setInterval(updateTime, 1000);
   }
-  $('.pin-container').pan();
+  if ($('.pin-container').length > 0) {
+    $('.pin-container').pan({
+      kineticDamping: 0
+    });
+  }
 });
 
 $(document).ajaxStop(function() {
@@ -20,6 +24,8 @@ $(document).ajaxStop(function() {
   var sunriseStart = moment(sunrise, ['hh:mma', 'H:m']).tz("America/New_York");
   var sunriseEnd = sunriseStart.clone().add(18, 'minutes');
   var sunriseRange = moment.range(sunriseStart, sunriseEnd);
+  // night
+  var dayRange = moment.range(sunriseEnd, sunsetStart);
   var n = 1;
   var reversibleEase = function (t) { return 2 * (t<0.5 ? 2*t*t : 1 - 2*t*t); };
   var updateSun = function() {
@@ -62,6 +68,12 @@ $(document).ajaxStop(function() {
       else {
         $('body').addClass('night');
       }
+    }
+    else if (!dayRange.contains(now)) {
+      $('.gray-background').animate({
+        opacity: 1
+      }, 100);
+      $('body').addClass('night');
     }
   };
   updateSun();

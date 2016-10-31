@@ -3,10 +3,8 @@
 <?php the_post() ?>
 <div class="content">
   <div id="page-<?php the_ID() ?>" <?php post_class() ?>>
-    <h2 class="entry-title"><?php the_title() ?></h2>
-    <h4>find me in page-custom.php</h4>
-    <div class="entry-content">
-      <?php the_content() ?>
-    </div>
+    <?php the_field('body_text') ?>
+
+    <?php echo do_shortcode('[contact-form-7 id="66" title="Contact form 1"]'); ?>
   </div><!-- .post -->
 </div><!-- .content -->

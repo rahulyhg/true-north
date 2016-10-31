@@ -38,41 +38,41 @@ strong, .strong, .fett, .bold, .smallBold, .smallerBold { font-weight: bold; }
 /* Append your site-specific styles here */
 
 .bold-gray {
-  font-family: $font-header;
-  font-size: $size-header;
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .bold-violet {
-  font-family: $font-header;
-  font-size: $size-header;
-  color: $violet;
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #5600D9;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 .lime-highlight {
-  background: $lime;
-  font-size: $size-header;
+  background: #B3FF00;
+  font-size: 11px;
   padding: 2px 0;
   text-transform: uppercase;
   letter-spacing: 0.22em;
 }
 
 .white-highlight {
-  background: $white;
+  background: #FFFFFF;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: $size-header;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 
 .brown-highlight {
-  background: $brown;
-  color: $white;
-  font-family: $font-header;
-  font-size: $size-header;
+  background: #C97500;
+  color: #FFFFFF;
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-size: 11px;
   letter-spacing: 0.1em;
   padding: 0 2px;
   text-transform: uppercase;
@@ -80,10 +80,10 @@ strong, .strong, .fett, .bold, .smallBold, .smallerBold { font-weight: bold; }
 }
 
 .dayglow-underline {
-  border-bottom: 1px solid $lime;
-  font-family: $font-header;
+  border-bottom: 1px solid #B3FF00;
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
   font-size: 13px;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
-  color: $white;
+  color: #FFFFFF;
 }

@@ -1,0 +1,30 @@
+.contact-form {
+  margin-top: 1em;
+  label {
+    margin-left: $margin-left;
+  }
+}
+
+.input-container {
+  max-width: $container-width + $margin-left;
+}
+
+input {
+  border: 1px solid $gray;
+  display: block;
+  font-family: $font-copy;
+  font-size: $size-copy;
+  color: $gray;
+  margin: 1em 0;
+  padding: 10px;
+  background: transparent;
+}
+
+div.wpcf7-response-output {
+  margin: 0;
+}
+
+input[type="submit"]:active {
+  color: $lime;
+  border: 1px solid $lime;
+}

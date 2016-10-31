@@ -4,6 +4,7 @@ nav {
   position: fixed;
   top: 3px + $body-margin;
   left: $body-margin;
+  z-index: 999;
 }
 
 nav ul,
