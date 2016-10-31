@@ -10,15 +10,15 @@
         $images = get_field('inspiration_gallery');
 
         if( $images ): ?>
-            <ul>
-                <?php foreach( $images as $image ): ?>
-                    <li>
-                        <a href="<?php echo $image['url']; ?>">
-                             <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
-                        </a>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
+          <div class="inspiration carousel" data-flickity='{"setGallerySize": false, "wrapAround": true}'>
+            <?php foreach( $images as $image ): ?>
+              <div class="carousel-cell">
+                <a href="<?php echo $image['url']; ?>">
+                  <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                </a>
+              </div>
+            <?php endforeach; ?>
+          </div>
         <?php endif; ?>
     </div>
   </div><!-- .post -->
