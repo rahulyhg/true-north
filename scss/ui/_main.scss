@@ -1,9 +1,15 @@
 /* BASE */
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: $font-copy;
   font-size: $size-copy;
   color: $gray;
-  margin: $body-margin;
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -25,8 +31,22 @@ textarea, input {
   display:block;
 }
 
+.container {
+  width: 100%;
+  height: 100%;
+  margin: $body-margin;
+  padding: 0;
+}
+
 .content {
   margin-top: 57px;
+  margin-left: 23px;
+  width: 515px;
+  min-height: 70%;
+}
+
+.wpc-weather-id {
+  margin-left: 0 !important;
 }
 
 /* COMPONENTS */

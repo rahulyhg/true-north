@@ -5529,7 +5529,7 @@ $(document).ajaxStop(function() {
   var updateSun = function() {
     var now = moment().tz("America/New_York");
     // debug sunset
-    now = sunsetStart.clone().add(n++, 'minutes');
+    // now = sunsetStart.clone().add(n++, 'minutes');
     // debug sunrise
     // now = sunriseStart.clone().add(n++, 'minutes');
     var diff, ratio;
@@ -5544,7 +5544,7 @@ $(document).ajaxStop(function() {
       $('.gray-background').animate({
         opacity: ratio * ratio
       }, 1000);
-      if (ratio > 0.3) {
+      if (ratio > 0.4) {
         $('body').addClass('night');
       }
       else {
