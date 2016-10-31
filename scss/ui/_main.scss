@@ -40,8 +40,8 @@ textarea, input {
 
 .content {
   margin-top: 57px;
-  margin-left: 23px;
-  width: 515px;
+  margin-left: $margin-left;
+  width: $container-width;
   min-height: 70%;
 }
 

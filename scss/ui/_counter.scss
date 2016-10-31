@@ -1,10 +1,12 @@
 /* VISITOR COUNTER */
 
 #counter {
+  margin-left: 23px;
+  
   margin-top: 57px;
   margin-bottom: 57px;
   left: $margin-left;
-  width: 100%;
+  width: $container-width;
   text-align: center;
   .number {
     font-size: 11px;
