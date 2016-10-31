@@ -33,5 +33,8 @@
     <div style="display:none";>
       <?php echo do_shortcode('[wpc-weather id="56"]'); ?>
     </div>
+
+    <div class="gray-background"></div>
+    <div class="sunset-gradient"></div>
   </body>
 </html>
