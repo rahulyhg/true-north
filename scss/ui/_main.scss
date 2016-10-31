@@ -42,7 +42,7 @@ textarea, input {
   margin-top: 57px;
   margin-left: $margin-left;
   width: $container-width;
-  min-height: 70%;
+  min-height: calc(90% - 200px);
 }
 
 .wpc-weather-id {
