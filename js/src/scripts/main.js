@@ -1,9 +1,12 @@
 $(document).ready(function() {
-  var updateTime = function() {
-    $('.timestamp').text(moment().tz("America/New_York").format('hh:mma'));
-  };
-  updateTime();
-  setInterval(updateTime, 1000); 
+  if ($('.timestamp').length > 0) {
+    var updateTime = function() {
+      $('.timestamp').text(moment().tz("America/New_York").format('hh:mma'));
+    };
+    updateTime();
+    setInterval(updateTime, 1000);
+  }
+  $('.pin-container').pan();
 });
 
 $(document).ajaxStop(function() {
@@ -28,7 +31,6 @@ $(document).ajaxStop(function() {
     var diff, ratio;
     if (sunsetRange.contains(now)) {
       // sunset
-      console.log("sunset");
       diff = now.diff(sunsetStart, 'minutes');
       ratio = diff / 18;
       $('.sunset-gradient').animate({
@@ -46,7 +48,6 @@ $(document).ajaxStop(function() {
     }
     else if (sunriseRange.contains(now)) {
       // sunrise
-      console.log("sunrise");
       diff = now.diff(sunriseStart, 'minutes');
       ratio = diff / 18;
       $('.sunset-gradient').animate({
