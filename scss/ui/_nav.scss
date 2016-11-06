@@ -23,18 +23,18 @@ nav li.current-menu-item a {
   background: transparent;
 }
 
-nav a {
+nav a, input[type="submit"] {
   background: $white;
   color: $gray;
   border: 1px solid $gray;
   font-family: $font-header-light;
   font-size: 10.5px;
-  padding: 3px 6px;
+  padding: 2px 6px 2px 8px;
   display: inline-block;
   text-transform: uppercase;
-  margin-right: 5px;
+  margin-right: 4px;
   margin-bottom: 8px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
 }
 
 nav a:active {

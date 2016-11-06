@@ -1,7 +1,6 @@
 /* BASE */
 html {
   width: 100%;
-  height: 100%;
 }
 
 body {
@@ -10,10 +9,13 @@ body {
   color: $gray;
   width: 100%;
   height: 100%;
+  letter-spacing: 1px;
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
+  color: inherit;
 }
 
 img {
@@ -32,17 +34,49 @@ textarea, input {
 }
 
 .container {
-  width: 100%;
+  width: $container-width + $margin-left + $margin-left;
   height: 100%;
+  min-height: 100vh;
   margin: $body-margin;
   padding: 0;
+  padding-bottom: 228px;
+  position: relative;
 }
 
 .content {
   margin-top: 57px;
   margin-left: $margin-left;
   width: $container-width;
-  min-height: calc(90% - 200px);
+}
+
+.content ul {
+  list-style: none;
+  margin-left: $margin-size / 2;
+  padding-left: 0;
+  margin-bottom: $margin-size;
+  li {
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+  li:before {
+    content: "+";
+    padding-right: 5px;
+  }
+}
+
+.content p a {
+  font-size: 11px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  position: relative;
+  z-index: 999;
+  top: -2px;
+  &:hover {
+    top: 0;
+    transform: none;
+  }
 }
 
 .wpc-weather-id {
@@ -52,15 +86,6 @@ textarea, input {
 /* COMPONENTS */
 .centered {
   text-align: center;
-}
-
-.subhead {
-  margin: 40px 0;
-  text-align: center;
-  font-family: $font-header;
-  font-size: 10.5px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
 
 .tiny {

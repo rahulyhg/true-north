@@ -1,6 +1,6 @@
 .night {
   color: $white;
-  nav a {
+  nav a, input[type="submit"] {
     background: $gray;
     color: $white;
     border: 1px solid $white;
@@ -10,5 +10,15 @@
   }
   .dayglow-underline {
     color: $gray;
+  }
+  input, textarea {
+    border: 1px solid $white;
+    color: $white;
+    background: transparent;
+  }
+  .carousel .flickity-prev-next-button {
+    svg path {
+      fill: $white;
+    }
   }
 }

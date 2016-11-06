@@ -2,11 +2,7 @@
 
 <?php the_post() ?>
 <div class="content">
-  <div id="page-<?php the_ID() ?>" <?php post_class() ?>>
-    <h2 class="entry-title"><?php the_title() ?></h2>
-    <h4>find me in page-custom.php</h4>
-    <div class="entry-content">
-      <?php the_content() ?>
-    </div>
+  <div id="page-<?php the_ID() ?>" <?php post_class() ?> style="margin-top: 250px">
+    <?php the_field('home_text') ?>
   </div><!-- .post -->
 </div><!-- .content -->

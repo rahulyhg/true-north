@@ -38,14 +38,14 @@ strong, .strong, .fett, .bold, .smallBold, .smallerBold { font-weight: bold; }
 /* Append your site-specific styles here */
 
 .bold-gray {
-  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .bold-violet {
-  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
   color: #5600D9;
   letter-spacing: 0.1em;
@@ -55,7 +55,7 @@ strong, .strong, .fett, .bold, .smallBold, .smallerBold { font-weight: bold; }
 .lime-highlight {
   background: #B3FF00;
   font-size: 11px;
-  padding: 2px 0;
+  padding: 2px 3px 2px 4px;
   text-transform: uppercase;
   letter-spacing: 0.22em;
 }
@@ -71,19 +71,28 @@ strong, .strong, .fett, .bold, .smallBold, .smallerBold { font-weight: bold; }
 .brown-highlight {
   background: #C97500;
   color: #FFFFFF;
-  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
   letter-spacing: 0.1em;
-  padding: 0 2px;
+  padding: 2px 3px 2px 4px;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
 }
 
 .dayglow-underline {
   border-bottom: 1px solid #B3FF00;
-  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
   color: #FFFFFF;
+}
+
+.subhead {
+  margin: 40px 0;
+  text-align: center;
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }

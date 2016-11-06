@@ -9,7 +9,7 @@
   max-width: $container-width + $margin-left;
 }
 
-input {
+input, textarea {
   border: 1px solid $gray;
   display: block;
   font-family: $font-copy;
@@ -24,7 +24,16 @@ div.wpcf7-response-output {
   margin: 0;
 }
 
+input[type="submit"] {
+  width: inherit;
+  line-height: inherit;
+}
+
 input[type="submit"]:active {
   color: $lime;
   border: 1px solid $lime;
+}
+
+label {
+  margin-left: $margin-left;
 }
