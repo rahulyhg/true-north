@@ -16,6 +16,8 @@
 }
 
 .carousel .flickity-prev-next-button {
+  z-index: 999;
+  cursor: pointer;
   background: transparent;
   top: calc(100% + 20px);
   width: 20px;
