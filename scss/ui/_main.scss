@@ -1,6 +1,8 @@
 /* BASE */
 html {
   width: 100%;
+  position: relative;
+  z-index: -1;
 }
 
 body {
@@ -49,6 +51,11 @@ textarea, input {
   width: $container-width;
 }
 
+.content > * {
+  position: relative;
+  z-index: 1;
+}
+
 .content ul {
   list-style: none;
   margin-left: $margin-size / 2;
@@ -81,6 +88,10 @@ textarea, input {
 
 .wpc-weather-id {
   margin-left: 0 !important;
+}
+
+.hidden {
+  display: none;
 }
 
 /* COMPONENTS */

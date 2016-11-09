@@ -2,3 +2,21 @@
 
 /* Here you can override any CSS which causes layout or visibility problems in the editor, */
 /* and duplicate any Theme-CSS to make the editor display look more like the real frontend */
+
+.mce-content-body p a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  font-size: 11px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  position: relative;
+  z-index: 999;
+  top: -2px;
+  &:hover {
+    top: 0;
+    transform: none;
+  }
+}

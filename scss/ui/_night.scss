@@ -11,6 +11,9 @@
   .dayglow-underline {
     color: $gray;
   }
+  .white-highlight {
+    color: $gray;
+  }
   input, textarea {
     border: 1px solid $white;
     color: $white;
@@ -20,5 +23,8 @@
     svg path {
       fill: $white;
     }
+  }
+  .unit-wrapper .unit-box {
+    border: 3px solid $white;
   }
 }

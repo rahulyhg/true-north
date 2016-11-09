@@ -3,10 +3,41 @@
 <?php the_post() ?>
 <div class="content">
   <div id="page-<?php the_ID() ?>" <?php post_class() ?>>
-    <h2 class="entry-title"><?php the_title() ?></h2>
-    <h4>find me in page-custom.php</h4>
-    <div class="entry-content">
-      <?php the_content() ?>
+    <?php the_field('unit_text') ?>
+    <div class="unit-boxes">
+      <?php
+        $gallery_json = [];
+        function get_image_url($image) {
+          return "\"{$image['url']}\"";
+        }
+        while (have_rows('unit')): the_row();
+          $name = get_sub_field('unit_name');
+          $description = get_sub_field('unit_description');
+          $gallery = get_sub_field('unit_gallery');
+      ?>
+          <div class="unit-wrapper">
+            <div class="unit-box" data-name="<?php echo $name; ?>">
+              <div class="unit-name"><?php echo $name; ?></div>
+              <div class="unit-svg"></div>
+            </div>
+            <div class="unit-description tiny"><?php echo $description; ?></div>
+          </div>
+      <?php
+          if ($gallery):
+            $joined_urls = join(",", array_map("get_image_url", $gallery));
+            $json_obj = "\"{$name}\": [{$joined_urls}]";
+            array_push($gallery_json, $json_obj);
+          endif;
+        endwhile;
+        $gallery_json = "{" . join(",", $gallery_json) . "}";
+      ?>
+    </div>
+    <div class="unit-detail hidden">
+      <div class="unit carousel"></div>
     </div>
   </div><!-- .post -->
 </div><!-- .content -->
+
+<script>
+var gallery_json = <?php echo $gallery_json; ?>;
+</script>

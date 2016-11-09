@@ -1,0 +1,18 @@
+.unit-wrapper {
+  width: $container-width / 3 - $margin-left / 2;
+  margin-right: $margin-left / 2;
+  margin-top: $margin-left;
+  display: inline-block;
+  &:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
+
+.unit-wrapper .unit-box {
+  height: $container-width / 3;
+  border: 3px solid $gray;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
