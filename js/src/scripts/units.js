@@ -1,6 +1,8 @@
 $(document).ready(function() {
   $('.unit-box').click(function() {
-    var img_urls = gallery_json[$(this).attr('data-name')];
+    var unit_name = $(this).attr('data-name');
+    var img_urls = gallery_json[unit_name];
+    $('.unit-detail-name').text("Unit " + unit_name);
     if ($('.unit.carousel').data('flickity')) {
       $('.unit.carousel').flickity('destroy').empty();
     }

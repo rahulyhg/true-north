@@ -35,7 +35,7 @@
     <div class="unit-detail hidden">
       <span class="close"></span>
       <div class="unit-detail-box">
-        <div class="unit-detail-name bold-violet">Unit <?php echo $name; ?></div>
+        <div class="unit-detail-name bold-violet"></div>
         <div class="unit carousel"></div>
       </div>
     </div>
