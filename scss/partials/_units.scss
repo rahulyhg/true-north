@@ -1,10 +1,11 @@
 .unit-wrapper {
   width: $container-width / 3 - $margin-left / 2;
-  margin-right: $margin-left / 2;
+  margin-right: $margin-left / 3;
   margin-top: $margin-left;
   display: inline-block;
-  &:nth-child(3n+3) {
-    margin-right: 0;
+  @include breakpoint($container-width + $margin-left + $margin-left) {
+    width: calc(50% - 20px);
+    margin-right: 10px;
   }
 }
 
@@ -48,6 +49,14 @@
   }
   &.next {
     right: -40px;
+  }
+  @include breakpoint($container-width + $margin-left + $margin-left) {
+    &.previous {
+      left: 0;
+    }
+    &.next {
+      right: 0;
+    }
   }
   svg path {
     fill: $violet;
