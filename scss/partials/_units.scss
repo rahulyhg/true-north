@@ -15,4 +15,67 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  &:hover {
+    cursor: pointer;
+    border: 3px solid $violet;
+    color: $violet;
+  }
+}
+
+.unit-detail {
+  text-align: right;
+  position: relative;
+}
+
+.unit-detail .unit-detail-box {
+  text-align: left;
+  border: 3px solid $violet;
+}
+
+.unit-detail .unit-detail-name {
+  position: absolute;
+  top: 60px;
+  left: 80px;
+  z-index: 999;
+}
+
+.unit.carousel .flickity-prev-next-button {
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  &.previous {
+    left: -40px;
+  }
+  &.next {
+    right: -40px;
+  }
+  svg path {
+    fill: $violet;
+  }
+}
+
+.close {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  cursor: pointer;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: $violet;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
 }

@@ -5858,4 +5858,8 @@ $(document).ready(function() {
     $('.unit-boxes').addClass('hidden');
     $('.unit-detail').removeClass('hidden');
   });
+  $(".unit-detail .close").click(function() {
+    $('.unit-boxes').removeClass('hidden');
+    $('.unit-detail').addClass('hidden');    
+  });
 });

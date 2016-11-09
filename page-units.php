@@ -33,7 +33,11 @@
       ?>
     </div>
     <div class="unit-detail hidden">
-      <div class="unit carousel"></div>
+      <span class="close"></span>
+      <div class="unit-detail-box">
+        <div class="unit-detail-name bold-violet">Unit <?php echo $name; ?></div>
+        <div class="unit carousel"></div>
+      </div>
     </div>
   </div><!-- .post -->
 </div><!-- .content -->
