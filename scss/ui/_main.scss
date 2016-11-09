@@ -39,19 +39,27 @@ textarea, input {
   width: $container-width + $margin-left + $margin-left;
   height: 100%;
   min-height: 100vh;
-  margin: $body-margin;
-  padding: 0;
+  margin: 0;
+  padding: $body-margin;
   padding-bottom: 228px;
   position: relative;
+  @include breakpoint($container-width + $margin-left + $margin-left) {
+    width: 100vw;
+  }
 }
 
 .content {
   margin-top: 57px;
   margin-left: $margin-left;
   width: $container-width;
+  @include breakpoint($container-width + $margin-left + $margin-left) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 87px;
+  }
 }
 
-.content > * {
+.content > *, .container > .wpcf7 {
   position: relative;
   z-index: 1;
 }

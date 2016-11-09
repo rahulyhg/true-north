@@ -20,3 +20,17 @@
     transform: none;
   }
 }
+
+.pin-name {
+  text-align: center;
+  font-family: $font-header;
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.pin-minutes {
+  text-align: center;
+  font-size: 8px;
+  margin-top: -8px;
+}

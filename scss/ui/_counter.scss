@@ -6,6 +6,10 @@
   margin-bottom: 57px;
   left: $margin-left;
   width: $container-width;
+  @include breakpoint($container-width + $margin-left + $margin-left) {
+    width: 100%;
+    left: 0;
+  }
   text-align: center;
   .number {
     font-size: 11px;

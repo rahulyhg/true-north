@@ -62,7 +62,7 @@
   position: absolute;
 }
 
-.pin-wrapper .map-pin .pin-name {
+.pin-name {
   text-align: center;
   font-family: $font-header;
   font-size: 10.5px;
@@ -70,7 +70,7 @@
   text-transform: uppercase;
 }
 
-.pin-wrapper .map-pin .pin-minutes {
+.pin-minutes {
   text-align: center;
   font-size: 8px;
   margin-top: -8px;
