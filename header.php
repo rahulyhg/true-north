@@ -30,6 +30,7 @@
   <meta name="twitter:description" content="<?php echo get_bloginfo('description'); ?>">
   <!-- <meta name="twitter:image" content="{{imageUrl}}"> -->
 
+  <link href="http://allfont.net/allfont.css?fonts=arial-black" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png" href="<?php echo get_bloginfo('template_url'); ?>/images/favicon.png">
   <?php wp_head(); ?>
 </head>

@@ -6,9 +6,11 @@ $(document).ready(function() {
     updateTime();
     setInterval(updateTime, 1000);
   }
-  if ($('.pin-container').length > 0) {
-    $('.pin-container').pan({
-      kineticDamping: 0
+  if ($('.pin-content').length > 0) {
+    $('.pin-content').panzoom({
+      cursor: 'grab',
+      disableZoom: true,
+      contain: 'invert'
     });
   }
 });

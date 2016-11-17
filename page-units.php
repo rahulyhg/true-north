@@ -18,7 +18,9 @@
           <div class="unit-wrapper">
             <div class="unit-box" data-name="<?php echo $name; ?>">
               <div class="unit-name"><?php echo $name; ?></div>
-              <div class="unit-svg"></div>
+              <div class="unit-svg">
+                <?php echo file_get_contents(get_bloginfo('template_url') . '/images/svg/unit.svg'); ?>
+              </div>
             </div>
             <div class="unit-description tiny"><?php echo $description; ?></div>
           </div>
@@ -37,6 +39,9 @@
       <div class="unit-detail-box">
         <div class="unit-detail-name bold-violet"></div>
         <div class="unit carousel"></div>
+        <div class="unit-svg">
+          <?php echo file_get_contents(get_bloginfo('template_url') . '/images/svg/unit.svg'); ?>
+        </div>
       </div>
     </div>
   </div><!-- .post -->

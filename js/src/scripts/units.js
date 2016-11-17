@@ -20,6 +20,8 @@ $(document).ready(function() {
       lazyLoad: true,
       imagesLoaded: true
     });
+    $('.unit-detail-box').attr('data-name', unit_name);
+    violetboxes.apply($('.unit-detail-box'));
     $('.unit-boxes').addClass('hidden');
     $('.unit-detail').removeClass('hidden');
   });
@@ -27,4 +29,16 @@ $(document).ready(function() {
     $('.unit-boxes').removeClass('hidden');
     $('.unit-detail').addClass('hidden');    
   });
+  var limeboxes = function() {
+    var num = $(this).attr('data-name').replace(/\D/g,'');
+    $(this).find('.unitsvg').css('fill', '');
+    $(this).find('.unitsvg_' + num).css('fill', '#B3FF00');
+  };
+  var violetboxes = function() {
+    var num = $(this).attr('data-name').replace(/\D/g,'');
+    $(this).find('.unitsvg').css('fill', '');
+    $(this).find('.unitsvg_' + num).css('fill', '#5600D9');
+  };
+  $('.unit-box').each(limeboxes);
+  $('.unit-box').hover(violetboxes, limeboxes);
 });
