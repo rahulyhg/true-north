@@ -3,7 +3,7 @@
 nav {
   position: fixed;
   top: 3px + $body-margin;
-  left: $body-margin;
+  margin: 0 auto;
   z-index: 999;
 }
 
@@ -28,7 +28,7 @@ nav a, input[type="submit"] {
   color: $gray;
   border: 1px solid $gray;
   font-family: $font-header-light;
-  font-size: 10.5px;
+  font-size: 12px;
   padding: 2px 6px 2px 8px;
   display: inline-block;
   text-transform: uppercase;

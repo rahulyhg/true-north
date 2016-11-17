@@ -1,12 +1,28 @@
-.contact-form {
-  margin-top: 1em;
-  label {
-    margin-left: $margin-left;
+form {
+  margin-top: -2em;
+}
+
+form label {
+  &:first-child {
+    margin-left: 78px;
+  }
+  margin-left: 73px;
+  @include breakpoint($container-width) {
+    margin-left: 0;
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 
+form > p > br {
+  display: none;
+}
+
+#wpcf7-f66-p16-o1 > form > p:nth-child(2) > br:nth-child(2)
+
 .input-container {
-  max-width: $container-width + $margin-left;
+  max-width: $container-width;
 }
 
 input, textarea {

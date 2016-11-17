@@ -17,6 +17,7 @@
           <?php endforeach; ?>
         </div>
       <?php endif; ?>
+      <br/>
     <?php the_field('project_text') ?>
   </div><!-- .post -->
 </div><!-- .content -->

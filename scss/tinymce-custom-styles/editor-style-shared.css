@@ -8,14 +8,14 @@
 
 .bold-gray {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .bold-violet {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 11px;
+  font-size: 12px;
   color: #5600D9;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -24,7 +24,9 @@
 .lime-highlight {
   background: #B3FF00;
   font-size: 11px;
-  padding: 2px 3px 2px 4px;
+  padding: 2px 0;
+  margin-right: 3px;
+  box-shadow: 2px 0 0 #B3FF00, -2px 0 0 #B3FF00;
   text-transform: uppercase;
   letter-spacing: 0.22em;
 }
@@ -33,7 +35,9 @@
   background: #FFFFFF;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
-  padding: 2px 3px 2px 3.5px;
+  padding: 2px 0;
+  box-shadow: 2px 0 0 #FFFFFF, -2px 0 0 #FFFFFF;
+  margin-right: 3px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -44,7 +48,9 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
   letter-spacing: 0.1em;
-  padding: 2px 3px 2px 4px;
+  padding: 2px 0;
+  box-shadow: 2px 0 0 #C97500, -2px 0 0 #C97500;
+  margin-right: 3px;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
 }

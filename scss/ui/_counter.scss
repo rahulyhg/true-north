@@ -3,13 +3,9 @@
 #counter {
   position: absolute;
   bottom: 0;
-  margin-bottom: 57px;
-  left: $margin-left;
-  width: $container-width;
-  @include breakpoint($container-width + $margin-left + $margin-left) {
-    width: 100%;
-    left: 0;
-  }
+  left: 0;
+  width: 100%;
+  margin-bottom: 57px;  
   text-align: center;
   .number {
     font-size: 11px;
