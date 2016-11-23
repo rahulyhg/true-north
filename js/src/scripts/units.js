@@ -21,11 +21,11 @@ $(document).ready(function() {
       imagesLoaded: true,
       cellAlign: 'left'
     });
+    $('.unit.carousel').css('width', $('.unit-detail').width());
     $('.unit-detail-box').attr('data-name', unit_name);
     violetboxes.apply($('.unit-detail-box'));
     $('.unit-boxes').addClass('hidden');
     $('.unit-detail').removeClass('hidden');
-    $('.unit.carousel').css('width', 0).css('width', '100%');
   });
   $(".unit-detail .close").click(function() {
     $('.unit-boxes').removeClass('hidden');
@@ -43,4 +43,8 @@ $(document).ready(function() {
   };
   $('.unit-box').each(limeboxes);
   $('.unit-box').hover(violetboxes, limeboxes);
+
+  $(window).resize(function() {
+    $('.unit.carousel').css('width', $('.unit-detail-box').width());
+  });
 });
