@@ -20,11 +20,12 @@ $(document).ready(function() {
       lazyLoad: true,
       imagesLoaded: true,
       cellAlign: 'left'
-    }).css('width', '100%');
+    });
     $('.unit-detail-box').attr('data-name', unit_name);
     violetboxes.apply($('.unit-detail-box'));
     $('.unit-boxes').addClass('hidden');
     $('.unit-detail').removeClass('hidden');
+    $('.unit.carousel').css('width', 0).css('width', '100%');
   });
   $(".unit-detail .close").click(function() {
     $('.unit-boxes').removeClass('hidden');
