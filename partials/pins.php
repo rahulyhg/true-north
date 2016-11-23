@@ -11,7 +11,9 @@
           $minutes = $minutes_away % 60;
       ?>
           <div class="map-pin" style="top: <?php echo $y; ?>px;left: <?php echo $x; ?>px;">
-            <div class="pin-svg"></div>
+            <div class="pin-svg">
+              <?php echo file_get_contents(get_bloginfo('template_url') . '/images/svg/flag.svg'); ?>
+            </div>
             <div class="pin-name"><?php echo $name; ?></div>
             <div class="pin-minutes">
               <?php

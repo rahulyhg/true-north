@@ -17,7 +17,8 @@
           <?php endforeach; ?>
         </div>
       <?php endif; ?>
-      <br/>
-    <?php the_field('project_text') ?>
+    <div style="padding-top: 30px;">
+      <?php the_field('project_text') ?>
+    </div>
   </div><!-- .post -->
 </div><!-- .content -->

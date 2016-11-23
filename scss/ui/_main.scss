@@ -49,7 +49,7 @@ textarea, input {
 
 .content {
   padding-left: 10px;
-  width: 515px;
+  width: $content-width;
   margin: 67px auto;
   @include breakpoint($container-width) {
     width: 100%;

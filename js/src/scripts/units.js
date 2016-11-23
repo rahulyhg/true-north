@@ -18,8 +18,9 @@ $(document).ready(function() {
       setGallerySize: false,
       wrapAround: true,
       lazyLoad: true,
-      imagesLoaded: true
-    });
+      imagesLoaded: true,
+      cellAlign: 'left'
+    }).css('width', '100%');
     $('.unit-detail-box').attr('data-name', unit_name);
     violetboxes.apply($('.unit-detail-box'));
     $('.unit-boxes').addClass('hidden');

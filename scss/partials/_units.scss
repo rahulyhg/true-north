@@ -1,9 +1,9 @@
 .unit-wrapper {
-  width: $container-width / 3 - $margin-left / 2;
-  margin-right: $margin-left / 3;
+  width: $content-width / 3 - 12px;
+  margin-right: 5px;
   margin-top: $margin-left;
   display: inline-block;
-  @include breakpoint($container-width + $margin-left + $margin-left) {
+  @include breakpoint($container-width) {
     width: calc(50% - 20px);
     margin-right: 10px;
   }
@@ -11,7 +11,7 @@
 
 .unit-wrapper .unit-box {
   position: relative;
-  height: $container-width / 3;
+  height: $content-width / 3 + 12px;
   border: 3px solid $gray;
   font-size: 60px;
   display: flex;
@@ -22,26 +22,40 @@
     border: 3px solid $violet;
     color: $violet;
   }
+  @include breakpoint($container-width) {
+    height: 200px;
+  }
 }
 
 .unit-svg {
   position: absolute;
   bottom: 10px;
   right: 10px;
+  width: 50px;
+  height: 35px;
   svg {
     width: 50px;
     height: 35px;
   }
 }
 
+.unit-detail .unit-svg {
+  bottom: 20px;
+  right: 20px;
+}
+
 .unit-detail {
   text-align: right;
   position: relative;
+  height: calc(100vh - 67px - 40px);
 }
 
 .unit-detail .unit-detail-box {
   text-align: left;
   border: 3px solid $violet;
+  height: 100%;
+  width: $content-width;
+  position: relative;
 }
 
 .unit-detail .unit-detail-name {
@@ -52,27 +66,19 @@
 }
 
 .unit.carousel {
-  margin-bottom: 60px;
+  height: 100%;
+  margin: 0;
+}
+
+.unit.carousel .carousel-cell img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .unit.carousel .flickity-prev-next-button {
   top: 50%;
   width: 30px;
   height: 30px;
-  &.previous {
-    left: -40px;
-  }
-  &.next {
-    right: -40px;
-  }
-  @include breakpoint($container-width + $margin-left + $margin-left) {
-    &.previous {
-      left: 0;
-    }
-    &.next {
-      right: 0;
-    }
-  }
   svg path {
     fill: $violet;
   }
