@@ -48,6 +48,12 @@
   text-align: right;
   position: relative;
   height: calc(100vh - 67px - 40px);
+  width: $container-width + 40px;
+  left: -112px;
+  @include breakpoint($container-width + 40px) {
+    width: 100%;
+    left: 0;
+  }
 }
 
 .unit-detail .unit-detail-box {
