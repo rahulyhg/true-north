@@ -10,7 +10,7 @@
           $hours = (int)($minutes_away / 60);
           $minutes = $minutes_away % 60;
       ?>
-          <div class="map-pin" style="top: <?php echo $y; ?>px;left: <?php echo $x; ?>px;">
+          <div class="map-pin" style="top: <?php echo $y; ?>px;left: <?php echo $x; ?>px;" data-top="<?php echo $y; ?>" data-left="<?php echo $x; ?>">
             <div class="pin-svg">
               <?php echo file_get_contents(get_bloginfo('template_url') . '/images/svg/flag.svg'); ?>
             </div>

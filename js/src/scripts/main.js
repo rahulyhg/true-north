@@ -7,6 +7,8 @@ $(document).ready(function() {
     setInterval(updateTime, 1000);
   }
   if ($('.pin-content').length > 0) {
+    responsivePins();
+    $(window).resize(responsivePins);
     $('.pin-content').panzoom({
       cursor: 'grab',
       disableZoom: true,
@@ -14,6 +16,13 @@ $(document).ready(function() {
     });
   }
 });
+
+function responsivePins() {
+  $('.map-pin').each(function() {
+    $(this).css('top', $(this).data('top') / 780 * $(window).height());
+    $(this).css('left', $(this).data('left') / 1440 * $(window).width());
+  });
+}
 
 $(document).ajaxStop(function() {
   // sunset
