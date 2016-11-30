@@ -5626,11 +5626,11 @@ $(document).ready(function() {
       imagesLoaded: true,
       cellAlign: 'left'
     });
-    $('.unit.carousel').css('width', $('.unit-detail').width());
     $('.unit-detail-box').attr('data-name', unit_name);
     violetboxes.apply($('.unit-detail-box'));
     $('.unit-boxes').addClass('hidden');
     $('.unit-detail').removeClass('hidden');
+    $('.unit.carousel').css('width', $('.unit-detail-box').width());
   });
   $(".unit-detail .close").click(function() {
     $('.unit-boxes').removeClass('hidden');

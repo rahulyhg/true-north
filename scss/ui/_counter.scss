@@ -11,7 +11,7 @@
     font-size: 11px;
     // -webkit-font-smoothing: antialiased;
     color: $white;
-    background: $gray-light;
+    background: $gray;
     padding: 4px 6px;
     display: inline-block;
     margin: 1px;
@@ -19,8 +19,8 @@
   .visitors {
     text-align: center;
     margin-top: 1.2em;
-    letter-spacing: 0.1em;
-    color: $gray-light;
+    color: $gray;
+    font-size: 9px;
   }
   &.bottom {
     position: fixed;

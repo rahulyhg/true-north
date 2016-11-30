@@ -37,7 +37,12 @@ div.wpcf7-response-output {
   margin: 0;
 }
 
+form > p {
+  margin: 0;
+}
+
 input[type="submit"] {
+  margin: 0;
   width: inherit;
   line-height: inherit;
 }

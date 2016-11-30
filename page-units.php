@@ -3,8 +3,8 @@
 <?php the_post() ?>
 <div class="content">
   <div id="page-<?php the_ID() ?>" <?php post_class() ?>>
-    <?php the_field('unit_text') ?>
     <div class="unit-boxes">
+      <?php the_field('unit_text') ?>
       <?php
         $gallery_json = [];
         function get_image_url($image) {
