@@ -37,6 +37,10 @@
   }
 }
 
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
 .carousel .flickity-page-dots {
   display: none;
 }

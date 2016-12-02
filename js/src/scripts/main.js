@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  console.log(localStorage.getItem('state'));
+  if (localStorage.getItem('state') == 'night') {
+    $('.gray-background').animate({
+      opacity: 1
+    }, 10);
+    $('body').addClass('night');
+  }
   if ($('.timestamp').length > 1) {
     var updateTime = function() {
       $('.timestamp').text(moment().tz("America/New_York").format('hh:mma'));
@@ -58,9 +65,11 @@ $(document).ajaxStop(function() {
       }, 1000);
       if (ratio > 0.4) {
         $('body').addClass('night');
+        localStorage.setItem('state', 'night');
       }
       else {
         $('body').removeClass('night');
+        localStorage.setItem('state', 'day');
       }
     }
     else if (sunriseRange.contains(now)) {
@@ -75,9 +84,11 @@ $(document).ajaxStop(function() {
       }, 1000);
       if (ratio > 0.7) {
         $('body').removeClass('night');
+        localStorage.setItem('state', 'day');
       }
       else {
         $('body').addClass('night');
+        localStorage.setItem('state', 'night');
       }
     }
     else if (!dayRange.contains(now)) {
@@ -85,6 +96,14 @@ $(document).ajaxStop(function() {
         opacity: 1
       }, 100);
       $('body').addClass('night');
+      localStorage.setItem('state', 'night');
+    }
+    else {
+      $('.gray-background').animate({
+        opacity: 0
+      }, 100);
+      $('body').removeClass('night');
+      localStorage.setItem('state', 'day');
     }
   };
   updateSun();

@@ -49,7 +49,7 @@
 </div>
 <div>
 	<?php
-		echo "Sunset " . $sunset;
+		echo "// Sunset " . $sunset;
 	?>
 </div>
 
