@@ -37,7 +37,7 @@
     <div class="unit-detail hidden">
       <span class="close"></span>
       <div class="unit-detail-box">
-        <div class="unit-detail-name bold-violet"></div>
+        <div class="unit-detail-name bold-violet subhead"></div>
         <div class="unit carousel"></div>
         <div class="unit-svg">
           <?php echo file_get_contents(get_bloginfo('template_url') . '/images/svg/unit.svg'); ?>

@@ -6,5 +6,6 @@
     <?php the_field('body_text') ?>
   </div><!-- .post -->
 </div><!-- .content -->
-
-<?php echo do_shortcode('[contact-form-7 id="66" title="Contact form 1"]'); ?>
+<div class="contact-form">
+  <?php echo do_shortcode('[contact-form-7 id="66" title="Contact form 1"]'); ?>
+</div>

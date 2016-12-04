@@ -1,9 +1,10 @@
-form {
-  margin-top: -2em;
+.contact-form {
+  margin: 0 auto;
+  max-width: $container-width - 80px;
 }
 
 form label {
-  margin-left: 78px;
+  margin-left: 52px;
   @include breakpoint($container-width) {
     margin-left: 0;
     &:first-child {
@@ -15,8 +16,6 @@ form label {
 form br {
   display: none;
 }
-
-#wpcf7-f66-p16-o1 > form > p:nth-child(2) > br:nth-child(2)
 
 .input-container {
   max-width: $container-width;
@@ -45,6 +44,7 @@ form > p {
 
 input[type="submit"] {
   margin: 0;
+  margin-bottom: 20px;
   width: inherit;
   line-height: inherit;
 }

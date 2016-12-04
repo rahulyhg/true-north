@@ -42,8 +42,9 @@ $(document).ready(function() {
     $(this).find('.unitsvg_' + num).css('fill', '#5600D9');
   };
   $('.unit-box').each(limeboxes);
-  $('.unit-box').hover(violetboxes, limeboxes);
-
+  $('.unit-box').on('mouseenter touchstart', violetboxes);
+  $('.unit-box').on('mouseleave touchend', limeboxes);
+  
   $(window).resize(function() {
     $('.unit.carousel').css('width', $('.unit-detail-box').width());
   });
