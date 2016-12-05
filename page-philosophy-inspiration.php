@@ -4,7 +4,6 @@
   <div id="page-<?php the_ID() ?>" <?php post_class() ?>>
     <!-- <h2 class="entry-title"><?php the_title() ?></h2> -->
       <?php the_field('philosophy_text') ?>
-      <div class="subhead">We are inspired by</div>
       <?php 
         $images = get_field('inspiration_gallery');
 
