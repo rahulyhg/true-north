@@ -6,7 +6,7 @@
     <div class="unit-boxes">
       <?php the_field('unit_text') ?>
       <?php
-        $gallery_json = [];
+        $gallery_json = array();
         function get_image_url($image) {
           return "\"{$image['url']}\"";
         }
