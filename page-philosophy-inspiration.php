@@ -8,11 +8,11 @@
         $images = get_field('inspiration_gallery');
 
         if( $images ): ?>
-          <div class="inspiration carousel" data-flickity='{"setGallerySize": false, "wrapAround": true, "lazyLoad": true}'>
+          <div class="inspiration carousel" data-flickity='{"setGallerySize": false, "wrapAround": true}'>
             <?php foreach( $images as $image ): ?>
               <div class="carousel-cell">
                 <a href="<?php echo $image['url']; ?>">
-                  <img data-flickity-lazyload="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                  <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                 </a>
               </div>
             <?php endforeach; ?>
