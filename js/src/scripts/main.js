@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  console.log(localStorage.getItem('state'));
   if (localStorage.getItem('state') == 'night') {
     $('.gray-background').animate({
       opacity: 1

@@ -8,8 +8,8 @@ $(document).ready(function() {
     }
     $.each(img_urls, function(index, elem) {
       var $div = $('<div>', {class: 'carousel-cell'});
-      var $a = $('<a>', {href: elem});
-      var $img = $('<img>', {'src': elem});
+      var $a = $('<a>', {href: elem, class: 'fresco'});
+      var $img = $('<img>', {'data-flickity-lazyload': elem});
       $a.append($img);
       $div.append($a);
       $('.unit.carousel').append($div);       
@@ -17,7 +17,7 @@ $(document).ready(function() {
     $('.unit.carousel').flickity({
       setGallerySize: false,
       wrapAround: true,
-      // lazyLoad: true,
+      lazyLoad: true,
       imagesLoaded: true,
       cellAlign: 'left'
     });
