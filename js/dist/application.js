@@ -5640,7 +5640,10 @@ $(document).ajaxStop(function() {
   setInterval(updateSun, 1000);
 });
 $(document).ready(function() {
+  var lastScroll;
   $('.unit-box').click(function() {
+    lastScroll = $(window).scrollTop();
+    $(window).scrollTop(0);
     var unit_name = $(this).attr('data-name');
     var img_urls = gallery_json[unit_name];
     $('.unit-detail-name').text("Unit " + unit_name);
@@ -5670,7 +5673,8 @@ $(document).ready(function() {
   });
   $(".unit-detail .close").click(function() {
     $('.unit-boxes').removeClass('hidden');
-    $('.unit-detail').addClass('hidden');    
+    $('.unit-detail').addClass('hidden');
+    $(window).scrollTop(lastScroll);
   });
   var limeboxes = function() {
     var num = $(this).attr('data-name').replace(/\D/g,'');
