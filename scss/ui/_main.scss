@@ -3,7 +3,6 @@ html {
   width: 100%;
   position: relative;
   z-index: -1;
-  cursor:  url(images/cursor/cursor.png), auto;
 }
 
 body {
@@ -18,6 +17,7 @@ body {
     letter-spacing: 1px;
     word-spacing: inherit;
   }
+  cursor:  url(images/cursor/cursor.png), auto;
 }
 
 a {

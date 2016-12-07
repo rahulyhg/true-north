@@ -1,8 +1,6 @@
 .night {
   color: $white;
-  html {
-    cursor:  url(images/cursor/cursor-night.png), auto;
-  }
+  cursor:  url(images/cursor/cursor-night.png), auto;
   nav a, input[type="submit"] {
     background: $gray;
     color: $white;
