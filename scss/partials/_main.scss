@@ -38,17 +38,17 @@
   left: 0;
   width: 200%;
   height: 200%;
-  &:hover {
-    cursor: move; /* fallback if grab cursor is unsupported */
-    cursor: grab;
-    cursor: -moz-grab;
-    cursor: -webkit-grab;
-  }
-  &:active { 
-    cursor: grabbing;
-    cursor: -moz-grabbing;
-    cursor: -webkit-grabbing;
-  }
+  // &:hover {
+  //   cursor: move;
+  //   cursor: grab;
+  //   cursor: -moz-grab;
+  //   cursor: -webkit-grab;
+  // }
+  // &:active { 
+  //   cursor: grabbing;
+  //   cursor: -moz-grabbing;
+  //   cursor: -webkit-grabbing;
+  // }
 }
 
 .pin-wrapper .pin-svg {
