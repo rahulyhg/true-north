@@ -35,11 +35,13 @@ http://flickity.metafizzy.co
   cursor: move;
   cursor: -webkit-grab;
   cursor: grab;
+  cursor: url(images/cursor/cursor-grab.png), auto;
 }
 
 .flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
   cursor: -webkit-grabbing;
   cursor: grabbing;
+  cursor: url(images/cursor/cursor-grab.png), auto;
 }
 
 /* ---- previous/next buttons ---- */
@@ -53,7 +55,7 @@ http://flickity.metafizzy.co
   border-radius: 50%;
   background: white;
   background: hsla(0, 0%, 100%, 0.75);
-  cursor: pointer;
+  cursor: url(images/cursor/cursor-pointer.png), pointer;
   /* vertically center */
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);

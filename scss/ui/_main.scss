@@ -17,12 +17,12 @@ body {
     letter-spacing: 1px;
     word-spacing: inherit;
   }
-  cursor:  url(images/cursor/cursor.png), auto;
+  cursor: url(images/cursor/cursor.png), auto;
 }
 
 a {
   text-decoration: none;
-  cursor: pointer;
+  cursor: url(images/cursor/cursor-pointer.png), pointer;
   color: inherit;
 }
 
@@ -101,6 +101,10 @@ textarea, input {
 
 .wpc-weather-id {
   margin-left: 0 !important;
+}
+
+.fr-overlay-background, .fr-close-background {
+  display: none;
 }
 
 .hidden {

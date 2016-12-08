@@ -33,4 +33,38 @@
       stroke: $white;
     }
   }
+  .unit-wrapper .unit-box {
+    &:hover {
+      cursor: url(images/cursor/cursor-pointer-night.png), pointer;
+    }
+  }
+  a {
+    cursor: url(images/cursor/cursor-pointer-night.png), pointer;
+  }
+  .close {
+    cursor: url(images/cursor/cursor-pointer-night.png), pointer;
+  }
+  .carousel .flickity-prev-next-button {
+    cursor: url(images/cursor/cursor-pointer-night.png), pointer;
+  }
+  .flickity-enabled.is-draggable .flickity-viewport {
+    cursor: url(images/cursor/cursor-grab-night.png), auto;
+  }
+  .flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+    cursor: url(images/cursor/cursor-grab-night.png), auto;
+  }
+  .flickity-prev-next-button {
+    cursor: url(images/cursor/cursor-pointer-night.png), pointer;
+  }
+  .fr-hovering-clickable .fr-container { cursor: url(images/cursor/cursor-pointer-night.png), pointer; }
+  .fr-side, .fr-close, .fr-thumbnail, .fr-thumbnail-overlay,
+  .fr-thumbnails-side-button,
+  .fr-thumbnails-side-button-background {
+    cursor: url(images/cursor/cursor-pointer-night.png), pointer;
+  }
+  .pin-wrapper .pin-content {
+    &:hover, &:active {
+      cursor: url(images/cursor/cursor-grab-night.png), auto;
+    }
+  }
 }

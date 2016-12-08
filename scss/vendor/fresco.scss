@@ -102,7 +102,7 @@
   text-align: center;
 }
 
-.fr-hovering-clickable .fr-container { cursor: pointer; }
+.fr-hovering-clickable .fr-container { cursor: url(images/cursor/cursor-pointer.png), pointer; }
 
 
 /*
@@ -360,7 +360,7 @@
   height: 72px;
   margin: 0 9px;
   margin-top: -36px;
-  cursor: pointer;
+  cursor: url(images/cursor/cursor-pointer.png), pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -421,7 +421,7 @@
   height: 48px;
   top: 0;
   right: 0;
-  cursor: pointer;
+  cursor: url(images/cursor/cursor-pointer.png), pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -528,7 +528,7 @@
   left: 50%;
   top: 50%;
   zoom: 1;
-  cursor: pointer;
+  cursor: url(images/cursor/cursor-pointer.png), pointer;
   margin: 0 10px;
 }
 .fr-ltIE9 .fr-thumbnail * {
@@ -548,7 +548,7 @@
   z-index: 0; /* IE8 */
 }
 
-.fr-thumbnail-overlay { cursor: pointer; }
+.fr-thumbnail-overlay { cursor: url(images/cursor/cursor-pointer.png), pointer; }
 .fr-thumbnail-active .fr-thumbnail-overlay { cursor: default; }
 .fr-thumbnail-overlay,
 .fr-thumbnail-overlay-background,
@@ -642,7 +642,7 @@
   margin-left: -14px;
   width: 28px;
   height: 28px;
-  cursor: pointer;
+  cursor: url(images/cursor/cursor-pointer.png), pointer;
 }
 
 .fr-thumbnails-side-button-background {
@@ -657,7 +657,7 @@
   -webkit-transition: background-color .2s ease-in;
   transition: background-color .2s ease-in;
   background-color: #333;
-  cursor: pointer;
+  cursor: url(images/cursor/cursor-pointer.png), pointer;
   border-radius: 4px;
 }
 .fr-thumbnails-side-button:hover .fr-thumbnails-side-button-background { background-color: #3b3b3b; }

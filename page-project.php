@@ -10,7 +10,7 @@
         <div class="project carousel" data-flickity='{"setGallerySize": false, "wrapAround": true, "lazyLoad": true}'>
           <?php foreach( $images as $image ): ?>
             <div class="carousel-cell">
-              <a href="<?php echo $image['url']; ?>" class="fresco">
+              <a href="<?php echo $image['url']; ?>" class="fresco" data-fresco-group="project">
                 <img data-flickity-lazyload="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
               </a>
             </div>

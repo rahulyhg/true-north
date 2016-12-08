@@ -30,6 +30,9 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  @include breakpoint($container-width) {
+    display: none;
+  }
 }
 
 .pin-wrapper .pin-content {
@@ -38,17 +41,19 @@
   left: 0;
   width: 200%;
   height: 200%;
-  // &:hover {
-  //   cursor: move;
-  //   cursor: grab;
-  //   cursor: -moz-grab;
-  //   cursor: -webkit-grab;
-  // }
-  // &:active { 
-  //   cursor: grabbing;
-  //   cursor: -moz-grabbing;
-  //   cursor: -webkit-grabbing;
-  // }
+  &:hover {
+    cursor: move;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    cursor: url(images/cursor/cursor-grab.png), auto;
+  }
+  &:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+    cursor: url(images/cursor/cursor-grab.png), auto;
+  }
 }
 
 .pin-wrapper .pin-svg {

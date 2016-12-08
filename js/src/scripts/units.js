@@ -11,7 +11,7 @@ $(document).ready(function() {
     }
     $.each(img_urls, function(index, elem) {
       var $div = $('<div>', {class: 'carousel-cell'});
-      var $a = $('<a>', {href: elem, class: 'fresco'});
+      var $a = $('<a>', {href: elem, class: 'fresco', 'data-fresco-group': 'unit'});
       var $img = $('<img>', {'data-flickity-lazyload': elem});
       $a.append($img);
       $div.append($a);
