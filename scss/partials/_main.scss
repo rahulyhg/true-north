@@ -72,6 +72,10 @@
 
 .pin-wrapper .map-pin {
   position: absolute;
+  @include breakpoint($container-width) {
+    left: 50% !important;
+    transform: translate(-50%, 30px);
+  }
 }
 
 .pin-name {
