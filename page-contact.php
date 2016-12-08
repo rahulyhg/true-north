@@ -7,5 +7,5 @@
   </div><!-- .post -->
 </div><!-- .content -->
 <div class="contact-form">
-  <?php echo do_shortcode('[contact-form-7 id="66" title="Contact form 1"]'); ?>
+  <?php echo do_shortcode('[FormmailMakerFormLoader]'); ?>
 </div>
