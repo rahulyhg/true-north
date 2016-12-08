@@ -30,12 +30,12 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  @include breakpoint($container-width) {
-    display: none;
-  }
 }
 
 .pin-wrapper .pin-content {
+  @include breakpoint($container-width) {
+    display: none;
+  }
   position: absolute;
   top: 0;
   left: 0;

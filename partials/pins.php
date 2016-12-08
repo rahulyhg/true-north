@@ -34,20 +34,22 @@
           </div>
       <?php
         endwhile;
-        if (is_page_template('page-home.php')):
-      ?>
-        <div class="map-pin" style="top: 100px;left: 670px;" data-top="100" data-left="670">
-          <div class="pin-svg">
-            <?php echo file_get_contents(get_bloginfo('template_url') . '/images/svg/flag.svg'); ?>
-          </div>
-          <div class="pin-name">True North</div>
-          <div class="pin-minutes">
-            0 minutes
-          </div>
-        </div>
-      <?php
-        endif;
       ?>
     </div>
+    <?php
+      if (is_page_template('page-home.php')):
+    ?>
+      <div class="map-pin" style="top: 100px;left: 670px;" data-top="100" data-left="670">
+        <div class="pin-svg">
+          <?php echo file_get_contents(get_bloginfo('template_url') . '/images/svg/flag.svg'); ?>
+        </div>
+        <div class="pin-name">True North</div>
+        <div class="pin-minutes">
+          0 minutes
+        </div>
+      </div>
+    <?php
+      endif;
+    ?>
   </div>
 <?php endif; ?>
