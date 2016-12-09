@@ -16,7 +16,7 @@
     Type comments here.</textarea>
     <input type="submit" name="submit" value="submit"/>
     <input type="hidden" name="form_order" value="alpha"/>
-    <input type="hidden" name="form_delivery" value="digest"/>
+    <input type="hidden" name="form_delivery" value="default"/>
     <input type="hidden" name="form_format" value="html"/>
   </form>
 </div>
