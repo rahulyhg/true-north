@@ -10,12 +10,12 @@
   <form action="/webformmailer.php" method="post">
     <input type="hidden" name="subject" value="True North Contact Form" />
     <input type="hidden" name="redirect" value="/contact?sent=true" />
-    <label>Name <input type="text" name="Name" /> </label>
-    <label>Email <input type="text" name="Email" /> </label>
-    <label>Current City <input type="text" name="CurrentCity" /> </label>
-    <label>Desired Unit(s) <input type="text" name="DesiredUnits" /> </label>
-    <label>Desired Move-in <input type="text" name="DesiredMovein" /> </label>
-    <label>Desired Lease Term <input type="text" name="DesiredLeaseTerm" /> </label>
+    <label>Name <input type="text" name="Name" minlength="2" required/> </label>
+    <label>Email <input type="email" name="Email" required/> </label>
+    <label>Current City <input type="text" name="CurrentCity" required/> </label>
+    <label>Desired Unit(s) <input type="text" name="DesiredUnits" required/> </label>
+    <label>Desired Move-in <input type="text" name="DesiredMovein" required/> </label>
+    <label>Desired Lease Term <input type="text" name="DesiredLeaseTerm" required/> </label>
     <label>Additional Feedback <textarea name="AdditionalFeedback"></textarea> </label>
     <input type="submit" name="submit" value="submit"/>
     <input type="hidden" name="form_order" value="default"/>
@@ -23,3 +23,7 @@
     <input type="hidden" name="form_format" value="html"/>
   </form>
 </div>
+
+<script>
+$(".contact-form form").validate();
+</script>
