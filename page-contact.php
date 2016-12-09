@@ -10,12 +10,15 @@
   <form action="/webformmailer.php" method="post">
     <input type="hidden" name="subject" value="True North Contact Form" />
     <input type="hidden" name="redirect" value="#" />
-    Name:  <input type="text" name="name" />
-    Email:  <input type="text" name="email" />
-    Comments:  <textarea name="comments">
-    Type comments here.</textarea>
+    <label>Name</label>  <input type="text" name="Name" />
+    <label>Email</label>  <input type="text" name="Email" />
+    <label>Current City</label>  <input type="text" name="CurrentCity" />
+    <label>Desired Unit(s)</label>  <input type="text" name="DesiredUnits" />
+    <label>Desired Move-in</label>  <input type="text" name="DesiredMovein" />
+    <label>Desired Lease Term</label>  <input type="text" name="DesiredLeaseTerm" />
+    <label>Additional Feedback</label>  <textarea name="AdditionalFeedback"></textarea>
     <input type="submit" name="submit" value="submit"/>
-    <input type="hidden" name="form_order" value="alpha"/>
+    <input type="hidden" name="form_order" value="default"/>
     <input type="hidden" name="form_delivery" value="default"/>
     <input type="hidden" name="form_format" value="html"/>
   </form>
