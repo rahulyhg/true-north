@@ -34,6 +34,10 @@ input, textarea {
   letter-spacing: inherit;
 }
 
+textarea {
+  resize: none;
+}
+
 div.wpcf7-response-output {
   margin: 0;
 }
