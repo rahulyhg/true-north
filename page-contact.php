@@ -9,7 +9,7 @@
 <div class="contact-form">
   <form action="/webformmailer.php" method="post">
     <input type="hidden" name="subject" value="True North Contact Form" />
-    <input type="hidden" name="redirect" value="#" />
+    <input type="hidden" name="redirect" value="/contact?sent=true" />
     <label>Name</label>  <input type="text" name="Name" />
     <label>Email</label>  <input type="text" name="Email" />
     <label>Current City</label>  <input type="text" name="CurrentCity" />
