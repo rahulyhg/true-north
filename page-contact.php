@@ -31,7 +31,3 @@
     </form>
   <?php endif; ?>
 </div>
-
-<script>
-$(".contact-form form").validate();
-</script>

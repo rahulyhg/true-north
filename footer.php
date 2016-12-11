@@ -9,6 +9,10 @@
       ga('create','UA-88807214-1','auto');ga('send','pageview');
     </script>
     <?php wp_footer(); ?>
+    
+    <script>
+      $(".contact-form form").validate();
+    </script>
 
     <div style="display:none";>
       <?php echo do_shortcode('[wpc-weather id="56"]'); ?>
