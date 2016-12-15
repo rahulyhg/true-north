@@ -5551,7 +5551,7 @@ $(document).ready(function() {
     responsivePins();
     $(window).resize(responsivePins);
     $('.pin-content').panzoom({
-      cursor: 'inherit',
+      cursor: '',
       disableZoom: true,
       contain: 'invert'
     });
