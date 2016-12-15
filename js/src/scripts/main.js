@@ -16,7 +16,6 @@ $(document).ready(function() {
     responsivePins();
     $(window).resize(responsivePins);
     $('.pin-content').panzoom({
-      cursor: 'grab',
       disableZoom: true,
       contain: 'invert'
     });
